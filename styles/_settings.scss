@@ -1,0 +1,42 @@
+/* COLORS */
+/* Palette */
+$dark-color-1: 	black;
+$light-color-1: white;
+$brand-color-1: blue;
+
+/* Element colors */
+$text-color-1:		$dark-color-1;
+$bg-color-1:		$light-color-1;
+$link-color-1: 		$brand-color-1;
+$button-color-1:	$brand-color-1;
+
+/* Opacities */
+$opacity-1: 0.2;
+$opacity-2: 0.5;
+$opacity-3: 0.8;
+
+
+/* FONTS */
+/* Font families */
+$fonts-url:           'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
+$default-font-family: 'Open Sans', sans-serif;
+
+/* Font weights */
+$normal-fw: 400;
+$bold-fw:   700;
+
+/* VERTICAL RHYTHM */
+$bfs:     1rem;
+$spacing: 1.5;
+$scale:   1.2;
+$blh:     $bfs * $spacing;
+
+/* LAYOUT */
+$text-max-width: $bfs * 30;
+
+/* BREAK POINTS */
+$bp-1: 500px;
+$bp-2: 750px;
+$bp-3: 1000px;
+$bp-4: 1500px;
+$bp-5: 2000px;

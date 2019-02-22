@@ -1,0 +1,33 @@
+/* VERTICAL RHYTHM */
+/* Power function to calculate type scale font size */
+@function power($number, $exponent) {
+  $value: 1;
+
+  @if $exponent > 0 {
+    @for $i from 1 through $exponent {
+      $value: $value * $number;
+    }
+  } @else if $exponent < 0 {
+    @for $i from 1 through -$exponent {
+      $value: $value / $number;
+    }
+  }
+
+  @return $value;
+}
+
+/* Calculate font size given a type scale level, base font size and scale */
+@function ts-font-size($level, $bfs, $scale) {
+  @return $bfs * power($scale, $level);
+}
+
+/* Minimum vertical rhythm line height greater than font size */
+@function vr-line-height($font-size, $blh) {
+  $value: $blh;
+  
+  @while $value < $font-size {
+    $value: $value + $blh;
+  }
+  
+  @return $value;
+}

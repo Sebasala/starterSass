@@ -1,0 +1,21 @@
+/* FONTS */
+@import url($fonts-url);
+
+body {
+  font-family: $default-font-family;
+}
+
+/* COLORS */
+
+
+/* VERTICAL RHYTHM */
+html {
+	font-size: 100%;
+}
+
+body {
+	@include type-setting(0, $bfs, $scale);
+}
+
+
+/* TRANSFORMS AND DECORATIONS */
